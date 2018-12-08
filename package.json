@@ -1,0 +1,24 @@
+{
+  "name": "gc-wireframe",
+  "version": "1.0.0",
+  "description": "Responsive page from Wireframe",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"test\""
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "html5"
+  ],
+  "author": "Phuc Duong",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "2.26.3",
+    "gulp": "4.0.0",
+    "gulp-autoprefixer": "6.0.0",
+    "gulp-sass": "4.0.2"
+  },
+  "dependencies": {}
+}

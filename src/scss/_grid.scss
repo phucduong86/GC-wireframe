@@ -168,21 +168,14 @@ form {
         grid-template-columns: max-content auto;
         align-items: center;
         grid-template-areas: "footerLogo legal"
-                            "footerNav footerNav";
+                            "footerLogo footerNav";
     
-        #footer-logo {
-            grid-area: footerLogo;
-            grid-column: 1;
-            grid-row: 1/3;
-            padding-right: 1.5rem;
-        }
         .legal {
+            justify-self: end;
             grid-gap: 0.5rem;
         }
         .footer-nav {
-            grid-area: footerNav;
-            grid-column: 2/3;
-            justify-self: start;
+            justify-self: end;
             grid-gap: 0.6rem;
         }
     }

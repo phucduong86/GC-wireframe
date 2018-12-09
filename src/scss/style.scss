@@ -7,15 +7,17 @@ html {
     color: $white;
     font-family: 'Merriweather Sans', sans-serif;
     @media screen and (max-width: $tablet) {
-      font-size: 20px;
+        font-size: 20px;
     }
-      
     @media screen and (max-width: $desktop) {
-      font-size: 18px;
+        font-size: 18px;
     }
 }
 body {
     background-color: $body-bg;
+}
+a {
+    color: $primary;
 }
 p {
     line-height: 1.6rem;
@@ -35,13 +37,14 @@ h4 {
     position: absolute;
     clip: rect(0 0 0 0);
     border: 0;
-    height: 1px; margin: -1px;
+    height: 1px;
+    margin: -1px;
     overflow: hidden;
     padding: 0;
     width: 1px;
 }
 .submit-button {
-    display:block;
+    display: block;
     background-color: $light-bg;
     color: $primary;
     font-size: 1.3rem;
@@ -60,7 +63,6 @@ h1 {
         color: #707070;
     }
 }
-
 header {
     background-color: $header-bg;
     display: grid;
@@ -100,19 +102,18 @@ header {
             text-transform: uppercase;
         }
         ul {
-            grid-template-columns:1fr;
-            display:none;
-}
-        
+            grid-template-columns: 1fr;
+            display: none;
+        }
         ul.active {
             display: grid;
             grid-auto-flow: row;
-            grid-row-gap: 1rem;
+            grid-row-gap: 0rem;
             text-align: right;
             li {
-                
                 a {
-                    padding: 1.5rem;
+                    display: block;
+                    padding: 0.5rem 1.5rem 0.5rem 0;
                 }
             }
         }
@@ -135,64 +136,57 @@ header {
         font-weight: 800;
     }
 }
-
 .additions {
     color: $primary;
-    .card-container{
+    .card-container {
+        margin-bottom: 1rem;
         .card {
-             .card-title {
-                 font-weight: 700;
-                 font-size: 1.2rem;
-                 margin-top: 2.3rem;
-             }
-             .card-description.first {
-                 margin: 1rem 0;
-             }
-             .card-description {
-                 line-height: 1.6rem;
-                 margin-bottom: 1rem;
-             }
-         }    
-         .card > img {
-             width: 100%;
-         }
-    } 
+            .card-title {
+                font-weight: 700;
+                font-size: 1.2rem;
+                margin-top: 2.3rem;
+            }
+            .card-description {
+                line-height: 1.6rem;
+
+            }
+        }
+        .card>img {
+            width: 100%;
+        }
+    }
     .container {
         padding: 0 2rem;
-
         a#viewmore {
             font-size: 1.1rem;
             text-align: right;
         }
         @media (max-width: $desktop) {
-
-        }
-        @media (max-width: $tablet) {
-            padding: 1rem;
-            h2 {
-                padding-bottom: 1rem;
-            }
             p {
                 padding-bottom: 0;
             }
+            .card-container {
+                .card {
+                    .card-title {
+                        margin-top: 1rem;
+                    }
+                    .card-description {
+                        line-height: 1.6rem;
+                    }
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        @media (max-width: $tablet) {
+            h2 {
+                padding-bottom: 1rem;
+            }
+
             a#viewmore {
                 padding-bottom: 1rem;
                 text-align: left;
             }
-            .card-container{
-                .card {
-                     .card-title {
-                         margin-top: 1rem;
-                     }
-                     .card-description.first {
-                         margin: 0;
-                     }
-                     .card-description {
-                        line-height: 1.6rem;
-                        margin-bottom: 2rem;
-                     }
-                 }    
-            } 
+
         }
     }
 }
@@ -206,10 +200,9 @@ header {
             padding: 3.9rem 0;
         }
     }
-
     @media (max-width: $tablet) {
         .featured-item {
-            width: 90%;
+            width: 95%;
             margin: 0 auto 2rem auto;
             h2 {
                 padding: 2rem 0;
@@ -221,7 +214,6 @@ header {
     color: $primary;
     width: 45%;
     margin: auto;
-
     input {
         padding: 1rem;
         font-size: 1rem;
@@ -233,10 +225,10 @@ header {
     form {
         padding: 2rem 0;
     }
-    @media (max-width: $desktop){
+    @media (max-width: $desktop) {
         width: 70%;
     }
-    @media (max-width: $tablet){
+    @media (max-width: $tablet) {
         width: 90%;
     }
 }
@@ -244,42 +236,39 @@ footer {
     background-color: $primary-dark;
     padding: 1.5rem;
     margin-top: 1.5rem;
-    @media (max-width:$tablet){
+    @media (max-width: $tablet) {
         padding: 0.7rem;
     }
     a {
         color: $white;
         line-height: 1.6rem;
-        @media (max-width: $tablet){
+        @media (max-width: $tablet) {
             font-size: 0.8rem;
-        } 
+        }
     }
-
     img {
         width: auto;
         height: 2.2rem;
     }
 }
-
 //////////////////////////////////
 //CAROUSEL//
-
 .featured {
     .featured-item {
         display: none;
     }
 }
-
-.prevDiv, .nextDiv {
+.prevDiv,
+.nextDiv {
     position: relative;
-    background-color: rgba(0,0,0,0.04);
+    background-color: rgba(0, 0, 0, 0.04);
 }
-.prevDiv:hover, .nextDiv:hover {
-    background-color: rgba(0,0,0,0.12);
+.prevDiv:hover,
+.nextDiv:hover {
+    background-color: rgba(0, 0, 0, 0.12);
 }
-
-
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     padding: 0 2rem;
     font-size: 5rem;
@@ -293,13 +282,10 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     @media (max-width: $desktop) {
-        padding:0;
+        padding: 0;
     }
-    
 }
-
-  .next {
-      right: 0;
-  }
+.next {
+    right: 0;
+}

@@ -1,3 +1,4 @@
+See deployed site on [Now.sh](https://src-j3mbrp58o.now.sh/)
 ## Requirements
 
 npm and git installed

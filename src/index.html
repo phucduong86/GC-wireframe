@@ -1,13 +1,192 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="notification" role="alert">
+        <a href="#">New Release! Check out the new episode of Series Title.</a>
+    </div>
+
+    <header>
+        <img src="img/logo.png" alt="Brand logo">
+        <a href="#" id="menu" class="menu-link">Menu</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Video Log</h1>
+        </div>
+    </div>
+    <div class="additions">
+        <div class="container">
+            <h2>Newest Additions</h2>
+            <a href="#" id="viewmore">View more new content</a>
+            <div class="card-container">
+                <div class="card area1">
+                    <img src="img/poster.png" alt="">
+                    <p class="card-title">Movie Title</p>
+                    <p class="card-description first">
+                        Director: Name
+                    </p>
+                    <p class="card-description">
+                        Starring: Name, Name
+                    </p>
+                </div>
+                <div class="card area2">
+                    <img src="img/poster.png" alt="">
+                    <p class="card-title">TV Show Title</p>
+                    <p class="card-description first">
+                        Episode: #12
+                    </p>
+                    <p class="card-description">
+                        Director: Name
+                    </p>
+                    <p class="card-description">
+                        Starring: Name
+                    </p>
+                </div>
+                <div class="card area3">
+                    <img src="img/poster.png" alt="">
+                    <p class="card-title">Movie Title</p>
+                    <p class="card-description first">
+                        Director: Name, Name
+                    </p>
+                    <p class="card-description">
+                        Starring: Name, Name, Name, Name
+                    </p>
+                </div>
+                <div class="card area4">
+                    <img src="img/poster.png" alt="">
+                    <p class="card-title">Movie Title</p>
+                    <p class="card-description first">
+                        Director: Name
+                    </p>
+                    <p class="card-description">
+                        Starring: Name, Name
+                    </p>
+                </div>
+                <div class="card area5">
+                    <img src="img/poster.png" alt="">
+                    <p class="card-title">TV Show Title</p>
+                    <p class="card-description first">
+                        Episode: #14
+                    </p>
+                    <p class="card-description">
+                        Director: Name
+                    </p>
+                    <p class="card-description">
+                        Starring: Name, Name
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="featured">
+        <div class="prevDiv" onclick="plusSlides(-1)">
+            <span class="prev">&#10094;</span>
+        </div>   
+        <div class="featured-item item1">
+            <h2>Featured Content Title #1</h2>
+
+                <img src="https://via.placeholder.com/160" alt="">
+                <div class="featured-text">
+                    <h4>Series Title</h4>
+                    <p>Newest Episode: #34, Episode Title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nec enim ut ornare. In tellus felis,
+                        vehicula sit amet sollicitudin at</p>
+                </div>
+
+        </div>
+        <div class="featured-item item2">
+            <h2>Featured Content Title #2</h2>
+
+            <img src="https://via.placeholder.com/160" alt="">
+            <div class="featured-text">
+                <h4>Series Title</h4>
+                <p>Newest Episode: #14, Another Episode</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus felis,
+                    vehicula sit amet sollicitudin at Donec blandit nec enim ut ornare.</p>
+            </div>
+        
+        </div>
+        <div class="featured-item item3">
+            <h2>Featured Content Title #3</h2>
+ 
+                <img src="https://via.placeholder.com/160" alt="">
+                <div class="featured-text">
+                    <h4>Series Title</h4>
+                    <p>Newest Episode: #109, Some Title</p>
+                    <p>Donec blandit nec enim ut ornare. In tellus felis,
+                            vehicula sit amet sollicitudin at Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+
+        </div>
+     
+        <div class="nextDiv" onclick="plusSlides(1)">
+            <span class="next">&#10095;</span>   
+        </div>
+        
+    </section>
+    <div class="contact">
+        <h2>Contact Video Log</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nec enim ut ornare. In tellus felis,
+            vehicula sit amet sollicitudin at, tempus non mauris. Aliquam facilisis elementum purus a vulputate.
+            Pellentesque nec </p>
+        <form action="post">
+            <label for="first_name" class="visually-hidden">First Name</label>
+            <input type="text" id="first_name" placeholder="First Name">
+            <label for="last_name" class="visually-hidden">Last Name</label>
+            <input type="text" id="last_name" placeholder="Last Name">
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" placeholder="Email">
+            <label for="phone" class="visually-hidden">Phone</label>
+            <input type="tel" id="phone" placeholder="Phone">
+            <label for="other" class="visually-hidden">Other notes</label>
+            <input type="text" name="other" id="other" placeholder="Other notes">
+        </form>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nec enim ut ornare. In tellus felis,
+            vehicula sit amet sollicitudin at, tempus non </p>
+        <button type="submit" name="submit" class="submit-button">Submit</button>
+    </div>
+    <footer>
+        <img src="img/logo.png" alt="Brand logo" id="footer-logo">
+        <ul class="legal">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>

@@ -50,6 +50,18 @@ h4 {
     font-size: 1.3rem;
     padding: 1rem 2.3rem;
     margin: 2.1rem auto;
+    transition: color ease-in-out 0.5ms;
+    
+    -webkit-transition: color ease-in-out 0.5ms;
+    -moz-transition: color ease-in-out 0.5ms;
+    -ms-transition: color ease-in-out 0.5ms;
+    -o-transition: color ease-in-out 0.5ms;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-dark;
+        color: $white;
+    }
 }
 h1 {
     font-size: 2.8rem;
